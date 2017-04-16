@@ -1,6 +1,7 @@
 package com.example.gtr.libsapplication.greendao;
 
 import com.example.gtr.libsapplication.MyApplication;
+import com.example.gtr.libsapplication.MyApplicationLike;
 import com.example.gtr.libsapplication.MySqlLiteOpenHelper;
 import com.example.gtr.libsapplication.greendao.gen.DaoMaster;
 import com.example.gtr.libsapplication.greendao.gen.DaoSession;
@@ -17,7 +18,7 @@ public class GreenDaoManager {
     private String DB_NAME= "test.db";
 
     private GreenDaoManager(){
-        MySqlLiteOpenHelper helper = new MySqlLiteOpenHelper(MyApplication.getContext(), DB_NAME, null);
+        MySqlLiteOpenHelper helper = new MySqlLiteOpenHelper(MyApplicationLike.getContext(), DB_NAME, null);
         mDaoMaster = new DaoMaster(helper.getWritableDatabase());
         mDaoSession = mDaoMaster.newSession();
     }

@@ -6,19 +6,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.gtr.libsapplication.MainActivity">
+    tools:context="com.example.gtr.libsapplication.tinker.TinkerTestActivity">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Retrofit"
-        android:textAllCaps="false"
-        android:onClick="gotoRetrofit"/>
+        android:text="button"
+        android:onClick="show"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Tinker Test"
-        android:textAllCaps="false"
-        android:onClick="gotoTinkerTest"/>
+        android:text="加载补丁"
+        android:onClick="loadPatchButton"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="this is error"
+        android:id="@+id/tv_tinker"/>
 </LinearLayout>

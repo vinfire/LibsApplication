@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.gtr.libsapplication.retrofit.RetrofitActivity;
+import com.example.gtr.libsapplication.tinker.TinkerTestActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void gotoRetrofit(View view){
         Intent intent = new Intent(this, RetrofitActivity.class);
+        startActivity(intent);
+    }
+
+    public void gotoTinkerTest(View view){
+        Intent intent = new Intent(this, TinkerTestActivity.class);
         startActivity(intent);
     }
 }
